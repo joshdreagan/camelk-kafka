@@ -21,7 +21,7 @@ oc apply -f kafka-cluster.yaml
 oc apply -f kafka-topic.yaml
 ```
 
-Edit the [message-processor-configmap.properties](./message-properties-configmap.properties) and [message-processor-secret.properties](message-processor-secret.properties) with your settings and credentials. Then create the ConfigMap & Secret.
+Edit the [message-processor-configmap.properties](./message-processor-configmap.properties) and [message-processor-secret.properties](message-processor-secret.properties) with your settings and credentials. Then create the ConfigMap & Secret.
 
 ```
 oc create configmap message-processor-configmap --from-file=application.properties=message-processor-configmap.properties
